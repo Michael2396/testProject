@@ -115,18 +115,18 @@
     }
 
     .input-name, .input-phone, .input-email {
-        background-image: url("images/icon-user.png");
+        background-image: url(".images/icon-user.png");
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: 13px;
     }
 
     .input-phone {
-        background-image: url("/images/icon-phone.png");
+        background-image: url("./images/icon-phone.png");
     }
 
     .input-email {
-        background-image: url("/images/icons-mail.png");
+        background-image: url("./images/icons-mail.png");
     }
 
     .img {

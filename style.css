@@ -968,14 +968,14 @@ a {
         background-color: transparent;
         color: #2DAFD7; }
   .hero-section .input-name, .hero-section .input-phone, .hero-section .input-email {
-    background-image: url("images/icon-user.png");
+    background-image: url(".images/icon-user.png");
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: 13px; }
   .hero-section .input-phone {
-    background-image: url("/images/icon-phone.png"); }
+    background-image: url("./images/icon-phone.png"); }
   .hero-section .input-email {
-    background-image: url("/images/icons-mail.png"); }
+    background-image: url("./images/icons-mail.png"); }
   .hero-section .img {
     max-width: 300px;
     width: 100%;
