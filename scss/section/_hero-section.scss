@@ -1,0 +1,120 @@
+.hero-section {
+    padding-top: 160px;
+    margin-bottom: 145px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        @include media(">=tablet") {
+            flex-direction: row;
+        }
+    }
+
+    .info {
+        position: relative;
+        margin-right: 20px;
+        @include media(">=desktop") {
+            padding-top: 70px;
+        }
+
+        &:after {
+            @include media(">=desktop") {
+                content: '';
+                position: absolute;
+                background-image: url("images/lineIcon.png");
+                bottom: 0;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 300px;
+                right: -90px;
+                top: 34%;
+            }
+        }
+    }
+
+    .title-section {
+        font-weight: 700;
+        font-size: 30px;
+        color: $blue;
+        margin-bottom: 40px;
+        @include media(">=desktop") {
+            font-size: 44px;
+        }
+
+        span {
+            color: $light-blue;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+            border-radius: 5px;
+            padding: 20px 50px;
+            border: 0;
+            position: relative;
+
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                color: #99BBC6;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+
+            }
+        }
+
+        .btn {
+            color: $white;
+            margin: 15px 0;
+            padding: 24px 15px;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: transparent;
+                color: $light-blue;
+            }
+        }
+    }
+
+    .input-name, .input-phone, .input-email {
+        background-image: url("images/icon-user.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 13px;
+    }
+
+    .input-phone {
+        background-image: url("/images/icon-phone.png");
+    }
+
+    .input-email {
+        background-image: url("/images/icons-mail.png");
+    }
+
+    .img {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        @include media(">=desktop") {
+            margin-left: auto;
+            margin-right: 115px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

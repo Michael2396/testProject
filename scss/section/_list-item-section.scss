@@ -1,0 +1,81 @@
+.list-item {
+    margin-bottom: 100px;
+    @include media(">=desktop") {
+        margin-bottom: 190px;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+
+    ul {
+        @extend %listreset;
+        display: flex;
+        box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+        border-radius: 5px;
+        background: $white;
+        flex-wrap: wrap;
+
+        li {
+            padding: 60px 14px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            @include media(">=tablet") {
+                width: 50%;
+            }
+            @include media(">=desktop") {
+                width: 20%;
+
+            }
+
+            &:after {
+                @include media(">=desktop") {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 25px;
+                    bottom: 25px;
+                    background: #F3FCFF;
+                    border-radius: 5px;
+                    width: 5px;
+                }
+            }
+
+            &:last-child {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    .title-box {
+        font-weight: 700;
+        font-size: 20px;
+        color: $blue;
+        position: relative;
+        z-index: 2;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 122.6%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: $blue;
+        position: relative;
+        z-index: 2;
+    }
+
+    .decor-number {
+        position: absolute;
+        font-weight: 700;
+        font-size: 144px;
+        color: rgba(246, 246, 246, 0.8);
+        top: 25px;
+        right: 20px;
+        z-index: 1;
+    }
+}

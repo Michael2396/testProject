@@ -1,0 +1,124 @@
+.how-to-start {
+    padding-bottom: 70px;
+    @include media(">=desktop") {
+        padding-bottom: 140px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include media(">=desktop") {
+            flex-direction: row;
+        }
+    }
+
+    .title-section {
+        font-weight: 700;
+        font-size: 36px;
+        color: $blue;
+        text-align: center;
+        max-width: 690px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .box-items {
+        display: flex;
+        flex-direction: column;
+        @include media(">=desktop") {
+            flex-direction: row;
+        }
+    }
+
+    .items-img {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .items-info {
+        margin-bottom: 30px;
+        @include media(">=desktop") {
+            padding-top: 80px;
+        }
+
+        &.left {
+            @include media(">=desktop") {
+                margin-right: 15px;
+            }
+
+            li {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 1px;
+                    background-color: #2DAFD7;
+                }
+            }
+        }
+
+        &.right {
+            @include media(">=desktop") {
+                margin-left: 15px;
+            }
+
+            li {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 1px;
+                    background-color: #2DAFD7;
+                }
+            }
+        }
+
+        ul {
+            @extend %listreset;
+
+            li {
+                background: #F4F9FF;
+                box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+                border-radius: 5px;
+                padding: 23px 20px 25px;
+                margin-bottom: 40px;
+                position: relative;
+
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .title-box {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+        color: #2DAFD7;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.04em;
+        color: #195B84;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
