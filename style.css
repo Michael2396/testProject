@@ -968,7 +968,7 @@ a {
         background-color: transparent;
         color: #2DAFD7; }
   .hero-section .input-name, .hero-section .input-phone, .hero-section .input-email {
-    background-image: url(".images/icon-user.png");
+    background-image: url("./images/icon-user.png");
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: 13px; }
