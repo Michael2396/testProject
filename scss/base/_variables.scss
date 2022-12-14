@@ -8,8 +8,8 @@ $white: #fff;
 $light-blue: #2DAFD7;
 $blue: #195B84;
 
-$base-font-sans-serif: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+$base-font-sans-serif: 'Rubik', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-serif: 'Poppins', 'Times', 'Baskerville', 'Georgia', serif;
 
 $nav-opener-color: $light-blue;
 
@@ -45,7 +45,7 @@ $h4-font-size: 21px !default;
 $h5-font-size: 17px !default;
 $h6-font-size: 15px !default;
 
-$headings-font-family: inherit !default;
+$headings-font-family: $base-font-sans-serif;
 $headings-color: inherit !default;
 
 

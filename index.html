@@ -27,10 +27,12 @@
                         <h1 class="title-section">ТОРГОВЫЕ СИГНАЛЫ<br>
                             ОТ ЭКСПЕРТА
                             КАЖДЫЙ<br> ДЕНЬ В ВАШЕМ <span>TELEGRAM</span></h1>
-                        <form action="" class="form">
-                            <input type="text" placeholder="Введите имя" class="input-name">
-                            <input type="email" placeholder="E-mail" class="input-email">
-                            <input type="tel" placeholder="Телефон" class="input-phone">
+                        <form id="lead-form" action="send.php" class="form" method="post">
+                            <input name="user_name" type="text" placeholder="Введите имя" class="input-name">
+                            <input name="user_email" type="email" placeholder="E-mail" class="input-email">
+                            <input name="user_phone" type="tel" placeholder="Телефон" class="input-phone">
+                            <p class="success-send" style="display: none;">Ваше сообщение успешно отправлено!</p>
+                            <img src="images/preloader.gif" alt="" class="preloader">
                             <button type="submit" class="btn">получить ДОСТУП</button>
                         </form>
                     </div>
@@ -121,5 +123,6 @@
     </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+<script src="main.js" defer></script>
 </body>
 </html>
