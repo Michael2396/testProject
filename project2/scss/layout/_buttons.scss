@@ -1,0 +1,9 @@
+.btn {
+	@extend %transition;
+	@extend %inline-block;
+	background: $btn-background;
+	color: $btn-color;
+	border-radius: 0;
+	padding: 0.4em 0.7em;
+	text-decoration: none;
+}

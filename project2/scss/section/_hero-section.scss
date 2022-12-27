@@ -1,0 +1,201 @@
+.hero-section {
+    padding: 50px 0;
+    @include media(">=desktop") {
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+
+    & > .container {
+        max-width: 1470px;
+        padding: 0 15px;
+    }
+
+    .title-section {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 59px;
+        text-align: center;
+        color: $light-blue;
+        margin-bottom: 5px;
+        @include media(">=desktop") {
+            font-size: 48px;
+        }
+    }
+
+    .box-items {
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 20px;
+        @include media(">=tablet") {
+            padding-left: 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: $light-blue;
+            width: 3px;
+            left: 0;
+            @include media(">=tablet") {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 35px;
+                bottom: 35px;
+            }
+        }
+
+        .box-item {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 50px;
+            @include media(">=tablet") {
+                width: 50%;
+                margin-bottom: 0;
+                flex-direction: row;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 27px;
+                height: 27px;
+                background-color: #270051;
+                border-radius: 50%;
+                border: 5px solid $light-blue;
+                top: 0;
+                z-index: 5;
+                left: -32px;
+                @include media(">=tablet") {
+                    right: -13.5px;
+                    left: auto;
+                }
+            }
+
+            .box-img {
+                max-width: 50%;
+                margin: 20px auto;
+                @include media(">=tablet") {
+                    margin: auto;
+                    margin-right: 20px;
+                    max-width: 208px;
+                }
+            }
+
+            .box-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                @include media(">=tablet") {
+                    max-width: 360px;
+                    text-align: right;
+                }
+            }
+
+            .box-title {
+                font-weight: 700;
+                font-size: 24px;
+                color: $light-blue;
+                margin-bottom: 17px;
+            }
+
+            .box-text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $white;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:nth-child(odd) {
+                @include media(">=tablet") {
+                    padding-right: 50px;
+                }
+                @include media(">=desktop") {
+                    padding-right: 80px;
+                }
+            }
+
+            &:nth-child(even) {
+                @include media(">=tablet") {
+                    padding-left: 50px;
+                    margin-left: auto;
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                }
+                @include media(">=desktop") {
+                    padding-left: 80px;
+                }
+
+                &:before {
+                    right: auto;
+                    left: -32px;
+                    @include media(">=tablet") {
+                        left: -13.5px;
+
+                    }
+                }
+
+                .box-info {
+                    padding: 0;
+                    @include media(">=tablet") {
+                        text-align: left;
+                    }
+                }
+
+                .box-img {
+                    @include media(">=tablet") {
+                        margin-right: 0;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            &:first-child {
+                &:before {
+                    top: 70px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    background-color: $light-blue;
+                    left: -26px;
+                    top: 0;
+                    @include media(">=tablet") {
+                        top: 25px;
+                        right: -7.5px;
+                        left: auto;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    background-color: $light-blue;
+                    bottom: 0;
+                    left: -26px;
+                    @include media(">=tablet") {
+                        left: -7.5px;
+                        bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

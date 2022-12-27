@@ -1,73 +1,30 @@
-# This file contains default .gitignore rules. To use it, copy it to .gitignore,
-# and it will cause files like your settings.php and user-uploaded files to be
-# excluded from Git version control. This is a common strategy to avoid
-# accidentally including private information in public repositories and patch
-# files.
-#
-# Because .gitignore can be specific to your site, this file has a different
-# name; updating Drupal core will not override your custom .gitignore file.
-
-# Ignore core when managing all of a project's dependencies with Composer
-# including Drupal core.
-# core
-
-# Ignore dependencies that are managed with Composer.
-# Generally you should only ignore the root vendor directory. It's important
-# that core/assets/vendor and any other vendor directories within contrib or
-# custom module, theme, etc., are not ignored unless you purposely do so.
-/vendor/
-
-# Ignore configuration files that may contain sensitive information.
-/sites/*/settings*.php
-/sites/*/services*.yml
-
-# Ignore paths that contain user-generated content.
-/sites/*/files
-/sites/*/private
-
-# Ignore SimpleTest multi-site environment.
-/sites/simpletest
-
-/.editorconfig
-/.gitattributes
-
-#root
-/.csslintrc
-/.eslintignore
-/.eslintrc.json
-/.ht.router.php
-/autoload.php
-/example.gitignore
-/index.php
-/INSTALL.txt
-/README.txt
-/robots.txt
-/update.php
-/web.config
-
-/core
-/profiles/contrib
-#/libraries
-
-#contrib
-/modules/contrib
-/themes/contrib
-/themes/**/.idea
-
-
-#node
-node_modules
+.DS_Store
+.vscode
+Thumbs.db
+.idea
+*.log
+*.map
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+wp-content/debug.log
+wp-content/webp-express/
 
 /.htaccess
-/.htpasswd
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
 
-/.idea
-/dump.sh
-/bin
+node_modules/
+sourceimages/
+acf-json/
 
-#/sites/development.services.yml
-
-/dump.bat
-/restore.bat
-
-/*.sql
+/*.zip
