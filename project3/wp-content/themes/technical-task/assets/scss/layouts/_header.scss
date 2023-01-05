@@ -1,0 +1,124 @@
+.site-header {
+    .box-logo {
+        margin-right: 100px;
+    }
+
+    .top-bar {
+        background-color: $black-800;
+        padding: 15px 0;
+        white-space: nowrap;
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-title, .box-text {
+            margin: 0;
+            line-height: 1;
+            color: $white;
+        }
+
+        .box-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 10px;
+            line-height: 17px;
+            @include media(">=768px") {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            @include media(">=1920px") {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .box-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            @include media(">=768px") {
+                font-size: 16px;
+            }
+            @include media(">=1920px") {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    .logo-stick {
+        display: none;
+    }
+
+    .header-info {
+        display: flex;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 135px;
+
+        li {
+            margin-right: 40px;
+
+            a {
+                text-decoration: none;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .header-navigation-top {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #F3F3F3;
+        padding: 20px 0;
+    }
+
+    .header-navigation-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .search-form {
+        margin-right: 70px;
+    }
+
+    .basket {
+        margin-right: 77px;
+        width: 25px;
+        height: 25px;
+        background-image: url("./assets/img/basket.png");
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 12px;
+            color: $black;
+            border: 1px solid $black;
+            background-color: $white;
+            line-height: 1;
+        }
+    }
+}

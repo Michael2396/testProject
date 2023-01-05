@@ -1,0 +1,217 @@
+# Translation of Plugins - ACF: Better Search - Stable (latest release) in Swedish
+# This file is distributed under the same license as the Plugins - ACF: Better Search - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-02-21 19:31:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: sv_SE\n"
+"Project-Id-Version: Plugins - ACF: Better Search - Stable (latest release)\n"
+
+#: templates/components/widgets/settings.php:38
+msgid "The configuration only for Developers."
+msgstr "Konfiguration endast för utvecklare."
+
+#: templates/components/widgets/settings.php:33
+msgid "Advanced settings"
+msgstr "Avancerade inställningar"
+
+#: templates/views/settings.php:26
+msgid "Changes were successfully saved!"
+msgstr "Ändringarna har sparats!"
+
+#: templates/components/widgets/settings.php:18
+msgid "Settings"
+msgstr "Inställningar"
+
+#: templates/components/notices/thanks.php:33
+#: templates/components/widgets/support.php:39
+msgid "Get help"
+msgstr "Skaffa hjälp"
+
+#: templates/components/widgets/donate.php:12
+msgid "We love what we do!"
+msgstr "Vi älskar det vi gör!"
+
+#: templates/components/widgets/donate.php:18
+msgid "However, working on plugins and technical support requires many hours of work. If you want to appreciate it, you can provide us a coffee. Thanks everyone!"
+msgstr "Att arbeta med tillägg och teknisk support kräver många timmars arbete. Om du vill visa din uppskattning kan du köpa kaffe till oss. Tack alla!"
+
+#: templates/components/widgets/support.php:18
+msgid "Do you have a technical problem? Please contact us. We will be happy to help you. Or maybe you have an idea for a new feature? Please let us know about it by filling the support form. We will try to add it!"
+msgstr "Har du ett tekniskt problem? Kontakta oss gärna, vi hjälper dig gärna. Eller kanske du har en idé för en ny funktion? Berätta för oss om den genom att fylla i supportformuläret. Vi försöker lägga till det!"
+
+#: templates/components/widgets/support.php:12
+msgid "We are waiting for your message"
+msgstr "Vi ser fram emot ditt meddelande"
+
+#: templates/components/widgets/support.php:45
+msgid "Do you like our plugin? Could you rate him? Please let us know what you think about our plugin. It is important that we can develop this tool. Thank you for all the ratings, reviews and donates."
+msgstr "Gillar du vårt tillägg? Kan du betygsätta det? Berätta för oss vad du tycker om vårt tillägg. Det är viktigt att vi kan utveckla detta verktyg. Tack för alla betyg, recensioner och donationer."
+
+#: templates/components/notices/thanks.php:43
+#: templates/components/widgets/donate.php:25
+msgid "Provide us a coffee"
+msgstr "Köp en kopp kaffe till oss"
+
+#: src/Settings/Acf.php:33
+msgid "Allow use for search?"
+msgstr "Tillåt användning för sökning?"
+
+#: templates/components/notices/acf.php:16
+msgid "Unfortunately, but this plugin requires the Advanced Custom Field plugin version 5 for all functionalities to work properly. Please install the latest version of the ACF plugin."
+msgstr "Detta tillägg kräver tillägget Advanced Custom Field version 5 för att alla funktioner ska fungera korrekt. Installera den senaste versionen av ACF-tillägget."
+
+#: templates/components/notices/acf.php:13
+msgid "ACF: Better Search error!"
+msgstr "Fel från ACF: Better Search!"
+
+#: templates/components/notices/thanks.php:47
+msgid "I added review, do not show again"
+msgstr "Jag har redan skrivit en recension, visa inte igen"
+
+#. Author URI of the plugin
+msgid "https://gbiorczyk.pl/"
+msgstr "https://gbiorczyk.pl/"
+
+#: templates/components/widgets/settings.php:26
+msgid "Additional features"
+msgstr "Ytterligare funktioner"
+
+#: templates/components/widgets/settings.php:22
+msgid "List of supported fields types"
+msgstr "Lista med fälttyper som stöds"
+
+#: templates/components/notices/thanks.php:15
+msgid "Thank you for using our plugin ACF: Better Search!"
+msgstr "Tack för att du använder vårt tillägg ACF: Better Search!"
+
+#: src/Settings/Options.php:48
+msgid "Search for whole phrases instead of each single word of phrase"
+msgstr "Sök efter hela fraser istället för varje enskilt ord i en fras"
+
+#: templates/components/widgets/about.php:25
+msgid "On search page and in admin panel everything works automatically. No need to add any additional code."
+msgstr "På söksidan och i adminpanelen fungerar allt automatiskt. Ingen extra kod behöver läggas till."
+
+#: templates/components/notices/thanks.php:38
+#: templates/components/widgets/support.php:52
+msgid "Add review"
+msgstr "Lägg till recension"
+
+#. Author of the plugin
+msgid "Mateusz Gbiorczyk"
+msgstr "Mateusz Gbiorczyk"
+
+#. Plugin Name of the plugin
+#: templates/views/settings.php:20
+msgid "ACF: Better Search"
+msgstr "ACF: Better Search"
+
+#: templates/components/widgets/about.php:12
+msgid "How does this work?"
+msgstr "Hur fungerar det här?"
+
+#: templates/components/widgets/settings.php:54
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+#: src/Settings/Options.php:36
+msgid "Radio Button"
+msgstr "Alternativknapp"
+
+#: src/Settings/Options.php:35
+msgid "Checkbox"
+msgstr "Kryssruta"
+
+#: src/Settings/Options.php:34
+msgid "Select"
+msgstr "Välj"
+
+#: src/Settings/Options.php:33
+msgid "Wysiwyg Editor"
+msgstr "Wysiwyg-redigerare"
+
+#: src/Settings/Options.php:26
+msgid "Url"
+msgstr "URL"
+
+#: src/Settings/Options.php:25
+msgid "Email"
+msgstr "E-post"
+
+#: src/Settings/Options.php:24
+msgid "Number"
+msgstr "Nummer"
+
+#: src/Settings/Options.php:23
+msgid "Text Area"
+msgstr "Textområde"
+
+#: src/Settings/Options.php:22
+msgid "Text"
+msgstr "Text"
+
+#: templates/components/widgets/about.php:18
+msgid "Plugin changes all SQL queries by extending the standard search to selected fields of Advanced Custom Fields."
+msgstr "Tillägget ändrar alla SQL-frågor genom att utöka standardsökningen till valda fält i Advanced Custom Fields."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: src/Admin/Plugin.php:40
+msgid "%1$sSettings%2$s"
+msgstr "%1$sInställningar%2$s"
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: src/Admin/Plugin.php:47
+msgid "%1$sProvide us a coffee%2$s"
+msgstr "%1$sKöp en kopp kaffe till oss%2$s"
+
+#. translators: %1$s: open strong tag, %2$s: close strong tag, %3$s: open em
+#. tag, %4$s: close em tag
+#: src/Settings/Options.php:73
+msgid "Use %1$s\"Lite Mode\"%2$s - does not check field types %3$s(faster search, but less accurate)%4$s"
+msgstr "Använd %1$s”Enkelt läge”%2$s – kontrollerar inte fälttyper %3$s(snabbare sökning, men mindre precist)%4$s"
+
+#. translators: %1$s: open strong tag, %2$s: close strong tag, %3$s: open em
+#. tag, %4$s: close em tag
+#: src/Settings/Options.php:84
+msgid "Use %1$s\"Selected Mode\"%2$s - use only selected fields for searching %3$s(edit group of ACF fields and check option for selected fields; it does not work in \"Lite Mode\")%4$s"
+msgstr "Använd %1$s”Utvalt läge”%2$s – använd endast valda fält för sökning %3$s(redigera en grupp av ACF-fält och markera alternativ för valda fält. Detta fungerar inte med ”Enkelt läge”)%4$s"
+
+#. translators: %1$s: open strong tag, %2$s: close strong tag
+#: src/Settings/Acf.php:36
+msgid "Only values from fields with selected this option will be used by %1$sACF: Better Search%2$s plugin."
+msgstr "Endast värden från fält med detta alternativ valt kommer att användas av tillägget %1$sACF: Better Search%2$s."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: templates/components/widgets/about.php:34
+msgid "For custom WP_Query loop and get_posts() function you must add %1$sSearch Parameter%2$s."
+msgstr "För anpassad WP_Query-loop och get_posts()-funktion måste du lägga till %1$ssökparametrar%2$s."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag, %3$s: open
+#. anchor tag, %4$s: close anchor tag
+#: templates/components/widgets/support.php:27
+msgid "Please %1$scheck our FAQ%2$s before adding a thread with technical problem. If you do not find help there, %3$scheck support forum%4$s for similar problems."
+msgstr "%1$sKolla in våra vanliga frågor%2$s innan du lägger till en tråd med tekniskt problem. Om du inte hittar hjälp där, %3$skolla in supportforumet%4$s för liknande problem."
+
+#. translators: %1$s: open anchor tag, %2$s: close anchor tag
+#: templates/components/notices/thanks.php:22
+msgid "Please let us know what you think about our plugin. It is important that we can develop this tool. Thank you for all the ratings, reviews and donates. If you have a technical problem, please before you add a review %1$scheck our FAQ%2$s or contact us if you did not find help there. We will try to help you!"
+msgstr "Berätta vad du tycker om vårt tillägg. Det är viktigt och hjälper oss så att vi kan utveckla detta verktyg. Tack för alla betyg, recensioner och donationer. Om du har ett tekniskt problem och innan du lägger till en recension %1$skolla in våra vanliga frågor%2$s eller kontakta oss om du inte hittade hjälp där. Vi ska försöka hjälpa dig!"
+
+#. translators: %1$s: open em tag, %2$s: close em tag
+#: src/Settings/Options.php:54
+msgid "Search for whole words instead of fragments within longer words %1$s(slower search)%2$s"
+msgstr "Sök efter hela ord istället för fragment i längre ord %1$s(långsammare sökning)%2$s"
+
+#. Description of the plugin
+msgid "Adds to default WordPress search engine the ability to search by content from selected fields of Advanced Custom Fields plugin."
+msgstr "Lägger till möjlighet för standardsökmotorn i WordPress att söka efter innehåll från valda fält i tillägget Advanced Custom Fields."
+
+#. translators: %1$s: open em tag, %2$s: close em tag
+#: src/Settings/Options.php:29
+msgid "File %1$s(it does not work in \"Lite Mode\")%2$s"
+msgstr "Filen %1$s(fungerar inte i ”Enkelt läge”)%2$s"

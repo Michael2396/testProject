@@ -1,0 +1,77 @@
+.hero-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    min-height: 700px;
+    background-color: #EEF1F5;
+    background-image: url("./assets/img/bg-hero.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .date {
+        font-weight: 600;
+        font-size: 18px;
+        color: $black;
+        margin-bottom: 40px;
+        @include media(">=768px") {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3EB8F1;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .box-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: $black;
+        margin-bottom: 10px;
+        @include media(">=tablet") {
+            font-size: 42px;
+            line-height: 51px;
+            margin-bottom: 20px;
+        }
+        @include media(">=1240px") {
+            font-size: 64px;
+            line-height: 77px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .box-text {
+        max-width: 540px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: $black;
+        @include media(">=768px") {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .box-button {
+        .btn {
+            background-color: #EEF1F5;
+        }
+    }
+}
