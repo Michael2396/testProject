@@ -225,4 +225,3 @@ if ( ! function_exists( 'technical_task_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
-

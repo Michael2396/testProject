@@ -75,3 +75,34 @@ function custom_jquery_add_to_cart_script()
     </script>
     <?php
 }
+
+$script_deps = array('jquery');
+wp_enqueue_script('ajax-script', get_template_directory_uri() . '/js/ajax-loadmore.js', $script_deps, '', true);
+
+
+function ajax_handler()
+{
+    // prepare our arguments for the query
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => $_POST['posts_per_page'],
+        'paged' => $_POST['posts_data_page'],
+        'order' => 'ASC',
+    );
+
+    // it is always better to use WP_Query but not here
+    $loop = new WP_Query($args);
+
+    if ($loop->have_posts()) {
+        while ($loop->have_posts()) : $loop->the_post();
+            wc_get_template_part('content', 'product');
+        endwhile;
+    } else {
+        echo __('No products found');
+    }
+    die; // here we exit the script and even no wp_reset_query() required!
+}
+
+
+add_action('wp_ajax_loadmore', 'ajax_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_loadmore', 'ajax_handler'); // wp_ajax_nopriv_{action}
