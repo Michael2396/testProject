@@ -1,0 +1,41 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 35px;
+    z-index: 2;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1780px;
+    }
+
+    .header-navigation {
+        display: flex;
+        @extend %listreset;
+        margin-left: auto;
+
+        li {
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $black;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .custom-logo-link {
+        margin-right: 50px;
+    }
+}
