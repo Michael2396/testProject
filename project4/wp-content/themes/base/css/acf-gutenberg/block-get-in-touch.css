@@ -468,7 +468,11 @@ th {
     flex-direction: column; }
   .get-in-touch-section .box-form input, .get-in-touch-section .box-form textarea {
     border: 1px solid #C9CCD4;
-    border-radius: 6px; }
+    border-radius: 6px;
+    transition: 0.3s;
+    outline: none; }
+    .get-in-touch-section .box-form input.error, .get-in-touch-section .box-form textarea.error {
+      border: 1px solid red; }
   .get-in-touch-section .box-form input {
     margin-bottom: 15px;
     min-height: 60px; }
@@ -477,5 +481,18 @@ th {
     min-height: 130px; }
   .get-in-touch-section .box-form .btn {
     border: 0; }
+  .get-in-touch-section .box-form .form-sent {
+    margin: 30px 0;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #69AE96;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s; }
+    .get-in-touch-section .box-form .form-sent.active {
+      opacity: 1;
+      visibility: visible; }
 
 /*# sourceMappingURL=block-get-in-touch.css.map */

@@ -24,6 +24,9 @@ include( get_template_directory() . '/inc/thumbnails.php' );
 // Theme menus
 include( get_template_directory() . '/inc/menus.php' );
 
+// Theme Custom Ajax
+include( get_template_directory() . '/inc/ajax/custom-ajax.php' );
+
 // Theme css & js
 include( get_template_directory() . '/inc/scripts.php' );
 

@@ -7,7 +7,7 @@
  * Icon: admin-customizer
  * color: false
  * enqueue_style: true
- * enqueue_script: false
+ * enqueue_script: true
  * enqueue_libs:
  */
 ?>
@@ -38,15 +38,19 @@ $block_id = get_section_id($block);
             </div>
             <div class="col">
                 <div class="box-form">
-                    <form action="">
-                        <input type="text" placeholder="Text">
-                        <input type="email" placeholder="Email">
-                        <textarea name="" id="" placeholder="Write something..."></textarea>
-                        <button type="submit" class="btn">Submit Message</button>
+                    <form action="<?php echo get_permalink(); ?>" method="post" class="form-validation">
+                        <input type="text" placeholder="Text" data-required="true" class="input-text">
+                        <input type="email" placeholder="Email" data-required="true" class="input-email">
+                        <textarea placeholder="Write something..." data-required="true" class="textarea"></textarea>
+                        <button type="submit" class="btn js-form-button"
+                                data-link="<?php echo site_url(); ?>/wp-admin/admin-ajax.php">Submit Message
+                        </button>
                     </form>
+                    <div class="form-sent">
+                        Form Sent
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 <?php endif; ?>

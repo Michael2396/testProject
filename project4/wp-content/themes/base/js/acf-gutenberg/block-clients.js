@@ -5,7 +5,6 @@ jQuery(function () {
 });
 
 function checkValueItem() {
-
     let item = jQuery('.js-slick-dots li').length;
     jQuery('.js-slick-dots').append(`<span>0${item}</span>`)
 }

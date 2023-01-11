@@ -42,7 +42,7 @@ $block_id = get_section_id($block);
                         $position = get_field('position', get_the_ID());
                         $video = get_field('video', get_the_ID());
                         ?>
-                        <li href="<?php echo get_post_permalink(); ?>" class="post-item">
+                        <li class="post-item">
                             <div class="box-item">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <div class="box-img"
@@ -60,8 +60,7 @@ $block_id = get_section_id($block);
                                         <h4 class="box-title"><?php the_title(); ?></h4>
                                     <?php endif; ?>
                                     <?php if ($position) : ?>
-                                        <h5 class="box-position"
-                                            id="<?php echo $block_id; ?>-text"><?php echo esc_html($position); ?></h5>
+                                        <h5 class="box-position"><?php echo esc_html($position); ?></h5>
                                     <?php endif; ?>
                                 </div>
                             </div>
