@@ -1,3 +1,19 @@
+.is-menu {
+    .header {
+        .opener {
+            &:after {
+                rotate: -90deg;
+                top: 10px;
+            }
+        }
+
+        .navigation-block {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
 .header {
     position: absolute;
     top: 0;
@@ -13,29 +29,184 @@
         max-width: 1780px;
     }
 
+    .navigation-block {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $white;
+        padding: 150px 50px 50px;
+        opacity: 0;
+        visibility: hidden;
+        @include media(">=desktop") {
+            position: static;
+            padding: 0;
+            opacity: 1;
+            visibility: visible;
+            background-color: transparent;
+            margin-left: auto;
+        }
+    }
+
     .header-navigation {
         display: flex;
         @extend %listreset;
-        margin-left: auto;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        height: 100%;
+        @include media(">=desktop") {
+            padding: 0;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
 
-        li {
-            margin-right: 50px;
+        & > li {
+            position: relative;
+            @include media(">=desktop") {
+                margin-right: 50px;
+            }
 
             &:last-child {
                 margin-right: 0;
             }
 
             a {
-                color: $black;
+                color: #A2A2A2;
                 text-decoration: none;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 20px;
+                white-space: nowrap;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+
+        .menu-item {
+            text-align: center;
+            margin-bottom: 30px;
+            @include media(">=desktop") {
+                margin-bottom: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                @include media(">=desktop") {
+                    & > .drop-holder {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        & > .menu-item {
+            & > .drop-holder {
+                @include media(">=desktop") {
+                    top: calc(100% + 15px);
+
+                    &:after {
+                        content: '';
+                        width: 27px;
+                        height: 27px;
+                        background-color: $white;
+                        position: absolute;
+                        top: -4px;
+                        left: 10px;
+                        transform: rotate(-45deg);
+                        z-index: -1;
+                    }
+                }
             }
         }
     }
 
-    .custom-logo-link {
-        margin-right: 50px;
+    .drop-holder {
+        @extend %listreset;
+        @include media(">=desktop") {
+            background: #FFFFFF;
+            border-radius: 12px;
+            position: absolute;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+
+        .submenu {
+            @extend %listreset;
+        }
+
+        //.menu-item {
+        //    margin-bottom: 30px;
+        //}
+
+        .drop-holder {
+            @include media(">=desktop") {
+                left: calc(100% + 15px);
+                top: 40px;
+            }
+
+            &:after {
+                @include media(">=desktop") {
+                    content: '';
+                    width: 27px;
+                    height: 27px;
+                    background-color: $white;
+                    position: absolute;
+                    top: 15px;
+                    left: -5px;
+                    transform: rotate(-45deg);
+                    z-index: -1;
+                }
+            }
+        }
+
+    }
+
+    .logo {
+        z-index: 5;
+        position: relative;
+        @include media(">=desktop") {
+            margin-right: 50px;
+        }
+    }
+
+    .opener {
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+        position: relative;
+        z-index: 5;
+
+        &:after, &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: $black;
+            transition: 0.3s;
+        }
+
+        &:before {
+            top: 10px;
+        }
+
+        @include media(">=desktop") {
+            display: none;
+        }
     }
 }

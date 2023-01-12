@@ -21,17 +21,22 @@
                         <?php the_custom_logo(); ?>
                     </div>
                 <?php endif; ?>
+                <div class="navigation-block">
+                    <?php if (has_nav_menu('primary')) : ?>
+                        <?php wp_nav_menu(array(
+                            'container' => false,
+                            'theme_location' => 'primary',
+                            'menu_id' => 'header-navigation',
+                            'menu_class' => 'header-navigation',
+                            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                            'walker' => new Custom_Walker_Nav_Menu
+                        )); ?>
+                    <?php endif; ?>
+                </div>
 
-                <?php if (has_nav_menu('primary')) : ?>
-                    <?php wp_nav_menu(array(
-                        'container' => false,
-                        'theme_location' => 'primary',
-                        'menu_id' => 'header-navigation',
-                        'menu_class' => 'header-navigation',
-                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                        'walker' => new Custom_Walker_Nav_Menu
-                    )); ?>
-                <?php endif; ?>
+                <div class="opener">
+
+                </div>
             </div>
         </header>
         <main id="main">

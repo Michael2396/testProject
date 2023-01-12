@@ -411,6 +411,9 @@ th {
   left: 50%;
   transform: translate3D(-50%, 0, 0); }
 
+.is-menu {
+  overflow: hidden; }
+
 .block-clients-section .box-slider, .block-clients-section .slick-dots {
   margin: 0;
   padding: 0;

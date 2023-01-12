@@ -411,6 +411,9 @@ th {
   left: 50%;
   transform: translate3D(-50%, 0, 0); }
 
+.is-menu {
+  overflow: hidden; }
+
 .ellipsis {
   white-space: nowrap;
   /* 1 */
